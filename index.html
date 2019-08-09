@@ -2,32 +2,34 @@
 <html>
 
 <head>
-    <title>Event Form</title>
+    <title>Survey Form</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
-
 
 
 <body>
     <div id="main">
-        <div id="title">
-            <h1 id="title-heading">Survey Form</h1>
-            <p id="title-info">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+        <div>
+            <h1 id="title">Survey Form</h1>
+            <p id="title-info">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat.</p>
         </div>
         <div id="form">
-            <p id="description">Uzair korai's profile on LinkedIn, the world's largest professional community.</p>
+            <p id="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
 
 
-            <form id="Event Form">
+            <form id="survey-form">
 
                 <div class="rowTab">
                     <div class="labels">
                         <label id="name-label">First Name: </label>
                     </div>
                     <div class="rightTab">
-                        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name"
-                            required>
+                        <input autofocus type="text" name="name" id="name" class="input-field"
+                            placeholder="Enter your name" required>
                     </div>
                 </div>
 
@@ -36,7 +38,7 @@
                         <label id="email-label">Email: </label>
                     </div>
                     <div class="rightTab">
-                        <input autofocus type="text" name="name" id="name" class="input-field"
+                        <input id="email" autofocus type="email" name="name" id="name" class="input-field"
                             placeholder="Enter your email" required>
                     </div>
                 </div>
@@ -46,7 +48,8 @@
                         <label id="number-label">Age: </label>
                     </div>
                     <div class="rightTab">
-                        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+                        <input type="number" name="age" id="number" min="1" max="125" class="input-field"
+                            placeholder="Age">
                     </div>
                 </div>
 
@@ -89,10 +92,14 @@
                         <label>What is the most useful coding language:</label>
                     </div>
                     <div class="rightTab">
-                        <select id="mostUseful" name="mostUseful" class="dropdown">
+                        <select id="dropdown" name="mostUseful" class="dropdown">
                             <option disabled selected value>Select an option</option>
+                            <option value="Python">JavaScript</option>
+                            <option value="web apps">HTML5</option>
+                            <option value="web apps">React</option>
+                            <option value="web apps">Redux</option>
                             <option value="Python">Python </option>
-                            <option value="web apps">Web apps</option>
+
                         </select>
                     </div>
                 </div>
@@ -107,32 +114,37 @@
                         <ul id="preferences" style="list-style: none;">
                             <li class="checkbox">
                                 <label>
-                                    <input name="prefer" value="2" type="checkbox" class="userRating">APL
+                                    <input name="prefer" value="2" type="checkbox" class="userRating">SQL
                                 </label>
                             </li>
                             <li class="checkbox">
                                 <label>
-                                    <input name="prefer" value="2" type="checkbox" class="userRating">AutoIt
+                                    <input name="prefer" value="2" type="checkbox" class="userRating">Java
                                 </label>
                             </li>
                             <li class="checkbox">
                                 <label>
-                                    <input name="prefer" value="2" type="checkbox" class="userRating">Basic
+                                    <input name="prefer" value="2" type="checkbox" class="userRating">JavaScript
                                 </label>
                             </li>
                             <li class="checkbox">
                                 <label>
-                                    <input name="prefer" value="2" type="checkbox" class="userRating">Eiffel
+                                    <input name="prefer" value="2" type="checkbox" class="userRating">C++
                                 </label>
                             </li>
                             <li class="checkbox">
                                 <label>
-                                    <input name="prefer" value="2" type="checkbox" class="userRating">Forth
+                                    <input name="prefer" value="2" type="checkbox" class="userRating">Python
                                 </label>
                             </li>
                             <li class="checkbox">
                                 <label>
-                                    <input name="prefer" value="2" type="checkbox" class="userRating">Frink
+                                    <input name="prefer" value="2" type="checkbox" class="userRating">PHP
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label>
+                                    <input name="prefer" value="2" type="checkbox" class="userRating">iOS/Swift
                                 </label>
                             </li>
                         </ul>
@@ -144,7 +156,8 @@
                         <label for="comments">Any Comments or Suggestions?</label>
                     </div>
                     <div class="rightTab">
-                        <textarea id="comments" name="comment" class="input-field" placeholder="Enter your comments here.." style="height:50px"></textarea>
+                        <textarea id="comments" name="comment" class="input-field"
+                            placeholder="Enter your comments here.." style="height:50px"></textarea>
                     </div>
                 </div>
 
